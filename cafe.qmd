@@ -1,0 +1,140 @@
+---
+title: "Science Café — SciComm Collective"
+description: "A monthly in-person discussion where curious people talk about science. No slides, no jargon — just good questions and great conversation."
+page-layout: full
+toc: false
+---
+
+```{=html}
+<!-- Hero -->
+<div class="cafe-page-hero">
+  <p class="hero-eyebrow" style="color:rgba(255,255,255,0.75)">Monthly in-person event</p>
+  <h1>Science Café</h1>
+  <p>A space where curious people come together to talk about science. No lectures, no slides — just a great topic, good questions, and a room full of people who want to understand the world better.</p>
+</div>
+
+<!-- Next event -->
+<section class="section">
+  <div class="section-inner">
+    <div class="section-label">Next event</div>
+    <div class="cafe-card" style="max-width:700px;">
+      <div class="cafe-date-block">
+        <div class="cafe-month">Jun</div>
+        <div class="cafe-day">11</div>
+      </div>
+      <div class="cafe-body">
+        <div class="cafe-title">Is AI making us worse at thinking?</div>
+        <div class="cafe-detail">📍 The Common Room, 14 Broad Street · 7:00–9:00 pm</div>
+        <div class="cafe-detail">🎟 Free admission · All welcome</div>
+        <div class="cafe-desc">
+          From GPS eroding our sense of direction to autocomplete finishing our sentences, we've been offloading cognitive tasks to machines for decades. But AI has accelerated this in a striking way. Are we gaining time to think better — or slowly outsourcing our ability to think at all? Come with your opinions, your doubts, and your questions.
+        </div>
+        <a href="#rsvp" class="btn btn-teal">Reserve your seat →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- How it works -->
+<div class="how-it-works" style="background:var(--paper-warm);max-width:100%;padding:48px 0;">
+  <div class="section-inner" style="max-width:760px;">
+    <div class="section-label">How it works</div>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-text">
+          <strong>We pick a topic</strong>
+          Topics come from our community — science in the news, emerging research, or a big question someone's been mulling. We announce it two weeks before each event.
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-text">
+          <strong>We gather and talk</strong>
+          Doors open at 6:30 pm. Discussion starts at 7 pm. A facilitator guides the conversation — but there are no experts, no panels, and no wrong answers. Everyone participates.
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-text">
+          <strong>We share a recap</strong>
+          After each event, we publish a short summary on the blog so those who couldn't attend can follow along. Some discussions become podcast episodes.
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <div class="step-text">
+          <strong>You suggest the next topic</strong>
+          At the end of every Café, we vote on topics for future months. Your idea might be next.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- RSVP form -->
+<section class="section" id="rsvp">
+  <div class="section-inner" style="max-width:560px;">
+    <div class="section-label">Reserve your seat</div>
+    <p style="font-size:15px;color:var(--ink-muted);margin-bottom:24px;">Free to attend — we just ask you to RSVP so we can plan seating and refreshments.</p>
+    <div style="display:flex;flex-direction:column;gap:14px;">
+      <div>
+        <label style="font-size:13px;font-weight:500;color:var(--ink-muted);display:block;margin-bottom:6px;">Full name</label>
+        <input type="text" placeholder="Your name" style="width:100%;padding:10px 14px;border:0.5px solid var(--border-mid);border-radius:var(--radius);font-size:14px;background:var(--paper);color:var(--ink);font-family:inherit;outline:none;" onfocus="this.style.borderColor='var(--teal)'" onblur="this.style.borderColor='var(--border-mid)'">
+      </div>
+      <div>
+        <label style="font-size:13px;font-weight:500;color:var(--ink-muted);display:block;margin-bottom:6px;">Email address</label>
+        <input type="email" placeholder="you@example.com" style="width:100%;padding:10px 14px;border:0.5px solid var(--border-mid);border-radius:var(--radius);font-size:14px;background:var(--paper);color:var(--ink);font-family:inherit;outline:none;" onfocus="this.style.borderColor='var(--teal)'" onblur="this.style.borderColor='var(--border-mid)'">
+      </div>
+      <div>
+        <label style="font-size:13px;font-weight:500;color:var(--ink-muted);display:block;margin-bottom:6px;">How did you hear about us?</label>
+        <select style="width:100%;padding:10px 14px;border:0.5px solid var(--border-mid);border-radius:var(--radius);font-size:14px;background:var(--paper);color:var(--ink);font-family:inherit;outline:none;appearance:none;">
+          <option value="">Select an option</option>
+          <option>Friend or colleague</option>
+          <option>Social media</option>
+          <option>The blog or podcast</option>
+          <option>Flyer or poster</option>
+          <option>Other</option>
+        </select>
+      </div>
+      <div>
+        <label style="display:flex;align-items:center;gap:10px;font-size:14px;color:var(--ink-muted);cursor:pointer;">
+          <input type="checkbox" style="width:16px;height:16px;accent-color:var(--teal);">
+          Add me to the mailing list for future events
+        </label>
+      </div>
+      <button onclick="handleRSVP()" style="margin-top:6px;" class="btn btn-teal">Confirm RSVP →</button>
+      <p id="rsvp-confirm" style="display:none;font-size:14px;color:var(--teal);text-align:center;padding:10px;background:var(--teal-light);border-radius:var(--radius);">
+        ✓ You're on the list! We'll send a reminder the day before.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Past topics -->
+<section class="section" style="background:var(--paper-warm);">
+  <div class="section-inner" style="max-width:700px;">
+    <div class="section-label">Past discussions</div>
+    <ul class="past-list">
+      <li><strong>May 2025</strong> — Should scientists be activists? The case for and against advocacy</li>
+      <li><strong>Apr 2025</strong> — What does "natural" even mean? A scientific and philosophical deep-dive</li>
+      <li><strong>Mar 2025</strong> — The future of food: insects, lab meat, and vertical farming</li>
+      <li><strong>Feb 2025</strong> — Consciousness: do animals experience it, and how would we know?</li>
+      <li><strong>Jan 2025</strong> — Gene editing: who decides what counts as a disease?</li>
+      <li><strong>Dec 2024</strong> — Is the universe finite — and does it matter if it is?</li>
+    </ul>
+  </div>
+</section>
+
+<section class="about-strip">
+  <h2>Want to suggest a topic?</h2>
+  <p>Great Science Café topics are ones where reasonable people disagree, science is illuminating, and curiosity is contagious.</p>
+  <a href="about.html#contact" class="btn btn-outline">Send your idea →</a>
+</section>
+
+<script>
+function handleRSVP() {
+  document.getElementById('rsvp-confirm').style.display = 'block';
+}
+</script>
+```

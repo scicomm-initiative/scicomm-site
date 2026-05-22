@@ -1,0 +1,76 @@
+/* ── Quarto override: suppress default chrome ── */
+
+/* Remove Quarto's default page padding so our full-bleed sections work */
+body > .page-layout-full > #quarto-content > .page-columns {
+  padding: 0 !important;
+  max-width: 100% !important;
+}
+
+/* Hide Quarto's default title block (we render our own heroes) */
+#title-block-header {
+  display: none !important;
+}
+
+/* Quarto wraps content in .quarto-container — let it be full width */
+.quarto-container {
+  max-width: 100% !important;
+  padding: 0 !important;
+}
+
+/* Suppress Quarto default body margin */
+#quarto-document-content {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+/* Quarto navbar: blend with our custom nav variables */
+.navbar {
+  background: rgba(250,250,247,0.92) !important;
+  backdrop-filter: blur(12px) !important;
+  border-bottom: 0.5px solid var(--border) !important;
+  font-family: 'DM Sans', sans-serif !important;
+  min-height: 60px !important;
+}
+
+.navbar-brand {
+  font-family: 'Lora', serif !important;
+  font-size: 17px !important;
+  font-weight: 600 !important;
+  color: var(--ink) !important;
+}
+
+.navbar-nav .nav-link {
+  font-size: 13.5px !important;
+  color: var(--ink-muted) !important;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: var(--ink) !important;
+}
+
+/* Join us button in nav */
+.navbar-nav .nav-link[href*="rsvp"] {
+  font-size: 13px !important;
+  font-weight: 500 !important;
+  padding: 7px 18px !important;
+  background: var(--ink) !important;
+  color: var(--paper) !important;
+  border-radius: 99px !important;
+}
+
+/* Page footer */
+.nav-footer {
+  border-top: 0.5px solid var(--border) !important;
+  padding: 28px 40px !important;
+  font-family: 'DM Sans', sans-serif !important;
+  font-size: 12px !important;
+  color: var(--ink-faint) !important;
+  background: var(--paper) !important;
+}
+
+/* Hide Quarto's sidebar toggle on full-width pages */
+#quarto-sidebar-toggle,
+#quarto-margin-sidebar {
+  display: none !important;
+}

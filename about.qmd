@@ -1,0 +1,199 @@
+---
+title: "About — SciComm Collective"
+# description: "We're a community of researchers, writers, and curious minds working to close the gap between the lab and the living room."
+description: "We are a community of researchers, writers and curious minds working to make science accessible to everyone by bridging the gap between science and the living room. We are empowering society through podcasts, science caf&eacute;s, workshops, and open content that build lasting creative capacity for a more scientifically engaged and inclusive world."
+page-layout: full
+toc: false
+include-in-header:
+  text: |
+    <style>
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 16px;
+      margin-top: 0;
+    }
+    .team-card {
+      background: #fff;
+      border: 0.5px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 20px;
+      text-align: center;
+    }
+    .team-avatar {
+      width: 60px; height: 60px; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 18px; font-weight: 500; color: #fff;
+      margin: 0 auto 12px;
+    }
+    .team-name { font-size: 15px; font-weight: 500; margin-bottom: 2px; }
+    .team-role { font-size: 12px; color: var(--ink-faint); margin-bottom: 8px; }
+    .team-bio { font-size: 13px; color: var(--ink-muted); line-height: 1.55; }
+    .values-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 14px;
+    }
+    .value-card {
+      padding: 20px;
+      background: var(--paper-warm);
+      border-radius: var(--radius-lg);
+    }
+    .value-icon { font-size: 24px; margin-bottom: 10px; }
+    .value-title { font-size: 15px; font-weight: 500; margin-bottom: 6px; }
+    .value-desc { font-size: 13px; color: var(--ink-muted); line-height: 1.6; }
+    </style>
+---
+
+```{=html}
+<div class="page-hero" style="max-width:760px;">
+  <p class="hero-eyebrow">About us</p>
+  <h1>Science belongs to everyone</h1>
+  <!-- <p>We're a community of researchers, writers, educators, and curious minds working to close the gap between the lab and the living room. Founded in 2021, SciComm Collective runs a blog, a podcast, monthly in-person events, and training workshops — all centred on the belief that good science communication makes society smarter and more resilient.</p> -->
+  <p>We are a community of researchers, writers and curious minds working to make science accessible to everyone by bridging the gap between science and the living room. We are empowering society through podcasts, science caf&eacute;s, workshops, and open content that build lasting creative capacity for a more scientifically engaged and inclusive world.</p>
+</div>
+
+<!-- Values -->
+<section class="section" style="background:var(--paper-warm);padding-top:40px;">
+  <div class="section-inner">
+    <div class="section-label">What we believe</div>
+    <div class="values-grid">
+      <div class="value-card">
+        <div class="value-icon">🔬</div>
+        <div class="value-title">Accuracy over virality</div>
+        <div class="value-desc">We never sacrifice scientific accuracy for a more exciting headline. When findings are uncertain, we say so.</div>
+      </div>
+      <div class="value-card">
+        <div class="value-icon">🗣️</div>
+        <div class="value-title">Dialogue, not broadcast</div>
+        <div class="value-desc">Science communication works best as a conversation. We create spaces where the public shapes the agenda too.</div>
+      </div>
+      <div class="value-card">
+        <div class="value-icon">🌍</div>
+        <div class="value-title">Inclusion and access</div>
+        <div class="value-desc">Most of our events and content are free. We work to platform voices that are underrepresented in science media.</div>
+      </div>
+      <div class="value-card">
+        <div class="value-icon">✨</div>
+        <div class="value-title">Craft matters</div>
+        <div class="value-desc">Good science communication is good writing, good storytelling, good listening. We take the craft seriously.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Team -->
+<section class="section">
+  <div class="section-inner">
+    <div class="section-label">The team</div>
+    <div class="team-grid">
+      <div class="team-card">
+        <div class="team-avatar" style="background:#1D9E75;">MP</div>
+        <div class="team-name">Maya Patel</div>
+        <div class="team-role">Co-founder &amp; Editor</div>
+        <div class="team-bio">Former science journalist, now teaching researchers how to tell their own stories.</div>
+      </div>
+      <div class="team-card">
+        <div class="team-avatar" style="background:#185FA5;">JT</div>
+        <div class="team-name">James Tao</div>
+        <div class="team-role">Co-founder &amp; Podcast Host</div>
+        <div class="team-bio">Neuroscience PhD, part-time podcaster, full-time enthusiast about how brains work.</div>
+      </div>
+      <div class="team-card">
+        <div class="team-avatar" style="background:#534AB7;">RV</div>
+        <div class="team-name">Rosa Vargas</div>
+        <div class="team-role">Blog Editor</div>
+        <div class="team-bio">Conservation biologist and writer. Specialises in ecology, climate, and telling stories from fieldwork.</div>
+      </div>
+      <div class="team-card">
+        <div class="team-avatar" style="background:#B97A17;">SL</div>
+        <div class="team-name">Sara Lindqvist</div>
+        <div class="team-role">Workshop Coordinator</div>
+        <div class="team-bio">Science communicator and trainer with 10 years of experience running public engagement programmes.</div>
+      </div>
+      <div class="team-card">
+        <div class="team-avatar" style="background:#D85A30;">AK</div>
+        <div class="team-name">Amir Khan</div>
+        <div class="team-role">Video &amp; Social Media</div>
+        <div class="team-bio">Filmmaker and AI researcher who makes short science explainers that actually get watched.</div>
+      </div>
+      <div class="team-card">
+        <div class="team-avatar" style="background:#0F6E56;">DC</div>
+        <div class="team-name">Diana Chen</div>
+        <div class="team-role">Science Café Facilitator</div>
+        <div class="team-bio">Marine biologist who runs our monthly discussions with an extraordinary ability to draw out quiet voices.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contribute -->
+<section class="section" style="background:var(--paper-warm);" id="contribute">
+  <div class="section-inner" style="max-width:700px;">
+    <div class="section-label">Get involved</div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;">
+      <div class="what-card" style="text-decoration:none;">
+        <div class="what-icon">✍️</div>
+        <div class="what-title">Write for the blog</div>
+        <div class="what-desc">Have a story to tell? We accept pitches from scientists, science writers, and enthusiasts at all levels. First-time writers welcome.</div>
+        <span class="what-tag tag-teal">Pitch a story</span>
+      </div>
+      <div class="what-card">
+        <div class="what-icon">🎙️</div>
+        <div class="what-title">Appear on the podcast</div>
+        <div class="what-desc">Know a fascinating researcher or communicator? Suggest them for the show — or suggest yourself. We're always looking for great guests.</div>
+        <span class="what-tag tag-blue">Suggest a guest</span>
+      </div>
+      <div class="what-card">
+        <div class="what-icon">🧪</div>
+        <div class="what-title">Run a workshop</div>
+        <div class="what-desc">Have expertise in science communication, writing, media, or a related field? We'd love to host you. Workshops can be free or ticketed.</div>
+        <span class="what-tag tag-amber">Propose a workshop</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section class="section" id="contact">
+  <div class="section-inner" style="max-width:560px;">
+    <div class="section-label">Get in touch</div>
+    <p style="font-size:15px;color:var(--ink-muted);margin-bottom:24px;">Whether you have a story pitch, a question about a workshop, or just want to say hello — we read everything.</p>
+    <div style="display:flex;flex-direction:column;gap:14px;">
+      <div>
+        <label style="font-size:13px;font-weight:500;color:var(--ink-muted);display:block;margin-bottom:6px;">Name</label>
+        <input type="text" placeholder="Your name" style="width:100%;padding:10px 14px;border:0.5px solid var(--border-mid);border-radius:var(--radius);font-size:14px;background:var(--paper);color:var(--ink);font-family:inherit;outline:none;" onfocus="this.style.borderColor='var(--teal)'" onblur="this.style.borderColor='var(--border-mid)'">
+      </div>
+      <div>
+        <label style="font-size:13px;font-weight:500;color:var(--ink-muted);display:block;margin-bottom:6px;">Email</label>
+        <input type="email" placeholder="you@example.com" style="width:100%;padding:10px 14px;border:0.5px solid var(--border-mid);border-radius:var(--radius);font-size:14px;background:var(--paper);color:var(--ink);font-family:inherit;outline:none;" onfocus="this.style.borderColor='var(--teal)'" onblur="this.style.borderColor='var(--border-mid)'">
+      </div>
+      <div>
+        <label style="font-size:13px;font-weight:500;color:var(--ink-muted);display:block;margin-bottom:6px;">What's on your mind?</label>
+        <select style="width:100%;padding:10px 14px;border:0.5px solid var(--border-mid);border-radius:var(--radius);font-size:14px;background:var(--paper);color:var(--ink);font-family:inherit;outline:none;appearance:none;">
+          <option value="">Select a topic</option>
+          <option>Blog pitch</option>
+          <option>Podcast guest suggestion</option>
+          <option>Workshop proposal</option>
+          <option>Science Café topic idea</option>
+          <option>General enquiry</option>
+        </select>
+      </div>
+      <div>
+        <label style="font-size:13px;font-weight:500;color:var(--ink-muted);display:block;margin-bottom:6px;">Message</label>
+        <textarea placeholder="Tell us more..." rows="4" style="width:100%;padding:10px 14px;border:0.5px solid var(--border-mid);border-radius:var(--radius);font-size:14px;background:var(--paper);color:var(--ink);font-family:inherit;outline:none;resize:vertical;" onfocus="this.style.borderColor='var(--teal)'" onblur="this.style.borderColor='var(--border-mid)'"></textarea>
+      </div>
+      <button onclick="handleContact()" class="btn btn-teal">Send message →</button>
+      <p id="contact-confirm" style="display:none;font-size:14px;color:var(--teal);text-align:center;padding:10px;background:var(--teal-light);border-radius:var(--radius);">
+        ✓ Message received! We'll get back to you within a few days.
+      </p>
+    </div>
+  </div>
+</section>
+
+<script>
+function handleContact() {
+  document.getElementById('contact-confirm').style.display = 'block';
+}
+</script>
+```

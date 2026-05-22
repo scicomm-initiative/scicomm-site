@@ -1,0 +1,57 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "SciComm Collective"
+  description: "Science storytelling for everyone"
+  favicon: "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><circle cx='16' cy='16' r='16' fill='%231D9E75'/><circle cx='16' cy='16' r='6' fill='none' stroke='white' stroke-width='2'/><line x1='16' y1='4' x2='16' y2='10' stroke='white' stroke-width='2'/><line x1='16' y1='22' x2='16' y2='28' stroke='white' stroke-width='2'/><line x1='4' y1='16' x2='10' y2='16' stroke='white' stroke-width='2'/><line x1='22' y1='16' x2='28' y2='16' stroke='white' stroke-width='2'/></svg>"
+
+  navbar:
+    pinned: true
+    background: "#fafaf7"
+    foreground: "#1a1a18"
+    left:
+      - text: "⬤ SciComm Collective"
+        href: index.qmd
+        aria-label: "SciComm Collective home"
+    right:
+      - text: "Blog"
+        href: blog.qmd
+      - text: "Podcast"
+        href: podcast.qmd
+      - text: "Workshops"
+        href: workshops.qmd
+      - text: "Science Café"
+        href: cafe.qmd
+      - text: "About"
+        href: about.qmd
+      - text: "Join us"
+        href: cafe.qmd#rsvp
+        aria-label: "Join us"
+
+  page-footer:
+    left: |
+      <a href="index.html" class="footer-logo"><span class="dot"></span>SciComm Collective</a>
+    center: |
+      <ul class="footer-links">
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="podcast.html">Podcast</a></li>
+        <li><a href="workshops.html">Workshops</a></li>
+        <li><a href="cafe.html">Science Café</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    right: "© 2025 SciComm Collective"
+
+format:
+  html:
+    theme: none
+    css:
+      - style.css
+      - quarto-overrides.css
+    toc: false
+    page-layout: full
+    include-in-header:
+      text: |
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">

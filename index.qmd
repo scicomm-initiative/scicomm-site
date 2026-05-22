@@ -1,0 +1,172 @@
+---
+title: "SciComm Collective — Science Storytelling for Everyone"
+description: "We advocate for science communication through blogs, podcasts, workshops, videos, and monthly in-person Science Café discussions."
+page-layout: full
+toc: false
+---
+
+```{=html}
+<!-- HERO -->
+<section class="hero">
+  <p class="hero-eyebrow">Science storytelling, for everyone</p>
+  <h1>Making science <em>vivid</em>, human,<br>and worth talking about</h1>
+  <p class="hero-sub">We advocate for science communication through blogs, podcasts, workshops, video, and monthly in-person conversations.</p>
+  <div class="hero-btns">
+    <a href="blog.html" class="btn btn-dark">Explore the blog</a>
+    <a href="cafe.html" class="btn btn-outline">📅 Next Science Café →</a>
+  </div>
+</section>
+
+<hr style="border:none;border-top:0.5px solid var(--border);margin:0 40px;">
+
+<!-- WHAT WE DO -->
+<section class="section">
+  <div class="section-inner">
+    <div class="section-label">What we do</div>
+    <div class="what-grid">
+      <a href="blog.html" class="what-card">
+        <div class="what-icon">✍️</div>
+        <div class="what-title">Science blog</div>
+        <div class="what-desc">Narrative-driven stories from researchers and science writers that put people at the centre.</div>
+        <span class="what-tag tag-teal">Read stories</span>
+      </a>
+      <a href="podcast.html" class="what-card">
+        <div class="what-icon">🎙️</div>
+        <div class="what-title">Podcast</div>
+        <div class="what-desc">In-depth conversations about science, society, and discovery — no jargon required.</div>
+        <span class="what-tag tag-blue">Listen now</span>
+      </a>
+      <a href="workshops.html#video" class="what-card">
+        <div class="what-icon">🎬</div>
+        <div class="what-title">Videos</div>
+        <div class="what-desc">Short explainers, event recaps, and researcher spotlights made by our community.</div>
+        <span class="what-tag tag-purple">Watch</span>
+      </a>
+      <a href="workshops.html" class="what-card">
+        <div class="what-icon">🧪</div>
+        <div class="what-title">Workshops</div>
+        <div class="what-desc">Hands-on training in science writing, video storytelling, and public talks.</div>
+        <span class="what-tag tag-amber">Register</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURED POSTS -->
+<section class="section" style="background:var(--paper-warm); padding-top:36px;">
+  <div class="section-inner">
+    <div class="section-label">From the blog</div>
+    <div class="blog-grid">
+
+      <a href="blog.html#post-1" class="blog-card">
+        <div class="blog-cat" style="color:var(--teal)">Climate &amp; Ecology</div>
+        <div class="blog-title">Why ants are better engineers than us</div>
+        <div class="blog-excerpt">Leafcutter ant colonies manage temperature, humidity, and airflow with a sophistication that engineers are only beginning to understand.</div>
+        <div class="blog-meta">
+          <div class="blog-avatar" style="background:#1D9E75;">RV</div>
+          <div class="blog-meta-text"><strong>Rosa Vargas</strong> · Apr 28 · 6 min read</div>
+        </div>
+      </a>
+
+      <a href="blog.html#post-2" class="blog-card">
+        <div class="blog-cat" style="color:var(--blue)">Neuroscience</div>
+        <div class="blog-title">The science of why music gives us chills</div>
+        <div class="blog-excerpt">Frisson — that shivery feeling when a song hits just right — turns out to be a window into how our brains predict and respond to beauty.</div>
+        <div class="blog-meta">
+          <div class="blog-avatar" style="background:#185FA5;">JT</div>
+          <div class="blog-meta-text"><strong>James Tao</strong> · Apr 14 · 4 min read</div>
+        </div>
+      </a>
+
+      <a href="blog.html#post-3" class="blog-card">
+        <div class="blog-cat" style="color:var(--purple)">SciComm Craft</div>
+        <div class="blog-title">Talking to the public about uncertain science</div>
+        <div class="blog-excerpt">When findings are preliminary, how do you share them honestly without either overstating or burying the news?</div>
+        <div class="blog-meta">
+          <div class="blog-avatar" style="background:#534AB7;">MP</div>
+          <div class="blog-meta-text"><strong>Maya Patel</strong> · Apr 2 · 8 min read</div>
+        </div>
+      </a>
+
+    </div>
+    <div style="text-align:center;margin-top:28px;">
+      <a href="blog.html" class="btn btn-outline">All posts →</a>
+    </div>
+  </div>
+</section>
+
+<!-- PODCAST PREVIEW -->
+<section class="section">
+  <div class="section-inner">
+    <div style="display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:8px;margin-bottom:18px;">
+      <div class="section-label" style="flex:1;margin-bottom:0;">Latest episodes</div>
+      <a href="podcast.html" style="font-size:13px;color:var(--ink-muted);text-decoration:none;">All episodes →</a>
+    </div>
+    <div class="podcast-list">
+
+      <a href="podcast.html#ep42" class="podcast-item">
+        <button class="play-btn" aria-label="Play episode">
+          <svg viewBox="0 0 16 16"><path d="M4 2l10 6-10 6V2z"/></svg>
+        </button>
+        <div class="ep-info">
+          <div class="ep-num">Ep. 42</div>
+          <div class="ep-title">Can science journalism survive the attention economy?</div>
+        </div>
+        <div class="ep-dur">38 min</div>
+      </a>
+
+      <a href="podcast.html#ep41" class="podcast-item">
+        <button class="play-btn" aria-label="Play episode">
+          <svg viewBox="0 0 16 16"><path d="M4 2l10 6-10 6V2z"/></svg>
+        </button>
+        <div class="ep-info">
+          <div class="ep-num">Ep. 41</div>
+          <div class="ep-title">How a marine biologist learned to write for everyone</div>
+        </div>
+        <div class="ep-dur">52 min</div>
+      </a>
+
+      <a href="podcast.html#ep40" class="podcast-item">
+        <button class="play-btn" aria-label="Play episode">
+          <svg viewBox="0 0 16 16"><path d="M4 2l10 6-10 6V2z"/></svg>
+        </button>
+        <div class="ep-info">
+          <div class="ep-num">Ep. 40</div>
+          <div class="ep-title">The ethics of science communication in a polarised world</div>
+        </div>
+        <div class="ep-dur">44 min</div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- SCIENCE CAFÉ PREVIEW -->
+<section class="section cafe-section">
+  <div class="section-inner">
+    <div class="section-label">Science Café</div>
+    <div class="cafe-card">
+      <div class="cafe-date-block">
+        <div class="cafe-month">Jun</div>
+        <div class="cafe-day">11</div>
+      </div>
+      <div class="cafe-body">
+        <div class="cafe-title">Is AI making us worse at thinking?</div>
+        <div class="cafe-detail">📍 The Common Room, 7–9 pm · Free, all welcome</div>
+        <div class="cafe-desc">Join us for an informal, wide-ranging conversation — no slides, no jargon, just curious people and good questions. Everyone has a voice at the table.</div>
+        <a href="cafe.html#rsvp" class="btn btn-teal">RSVP for free →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT STRIP -->
+<section class="about-strip">
+  <h2>Science belongs to everyone</h2>
+  <p>We're a community of researchers, writers, educators, and curious minds working to close the gap between the lab and the living room.</p>
+  <div class="hero-btns">
+    <a href="about.html" class="btn btn-outline">Meet the team</a>
+    <a href="cafe.html#rsvp" class="btn btn-teal">Get involved</a>
+  </div>
+</section>
+```
