@@ -1,123 +1,66 @@
-# SciComm Collective — Quarto Website
+# SciComm Initiative — Website
 
-This is the SciComm Collective website converted from plain HTML to [Quarto](https://quarto.org).
+A clean, fully static website for a science communication group. No frameworks, no build tools — just HTML, CSS, and a little vanilla JavaScript.
 
-## File structure
+## Pages
 
-```
-_quarto.yml          ← Site config: navbar, footer, theme, CSS
-index.qmd            ← Homepage
-blog.qmd             ← Blog listing with category filter
-podcast.qmd          ← Podcast episode list
-workshops.qmd        ← Workshop listings
-cafe.qmd             ← Science Café page with RSVP form
-about.qmd            ← Team, values, contact form
-style.css            ← All custom styles (carried over from original site)
-quarto-overrides.css ← Suppresses Quarto default chrome that clashes with custom design
-```
+| File | Description |
+|---|---|
+| `index.html` | Homepage with hero, featured posts, podcast preview, Science Café teaser |
+| `blog.html` | Blog listing with category filter |
+| `podcast.html` | Episode list for "The Curious Lab" podcast |
+| `workshops.html` | Upcoming and past workshop listings |
+| `cafe.html` | Science Café page with next event, RSVP form, and past topics |
+| `about.html` | Team, values, get-involved, and contact form |
+| `style.css` | All shared styles |
 
-## Prerequisites
+## Hosting on GitHub Pages
 
-Install Quarto from https://quarto.org/docs/get-started/ (free, available for macOS, Windows, Linux).
+1. **Create a new GitHub repository** (e.g. `scicomm-Initiative`)
 
-## Preview locally
+2. **Upload all files** — drag and drop into the repository, or use git:
+   ```bash
+   git init
+   git add .
+   git commit -m "Initial site"
+   git remote add origin https://github.com/YOUR-USERNAME/scicomm-collective.git
+   git push -u origin main
+   ```
 
-```bash
-quarto preview
-```
+3. **Enable GitHub Pages**:
+   - Go to your repo → **Settings** → **Pages**
+   - Under "Source", select **Deploy from a branch**
+   - Choose **main** branch, **/ (root)** folder
+   - Click **Save**
 
-This starts a local dev server at `http://localhost:4848` with live reload.
+4. Your site will be live at `https://YOUR-USERNAME.github.io/scicomm-initiative/` within a few minutes.
 
-## Build for production
+## Custom domain (optional)
 
-```bash
-quarto render
-```
+To use a custom domain like `scicomm-initiative.org`:
+1. Buy a domain from any registrar (Namecheap, Google Domains, etc.)
+2. Add a file called `CNAME` to this repo containing just your domain: `scicomm-initiative.org`
+3. In your domain registrar's DNS settings, add a CNAME record pointing to `YOUR-USERNAME.github.io`
 
-Output goes to `_site/`. Upload that folder to any static host.
+## Customising the content
 
-## Deploy to GitHub Pages
+- **Colours**: all defined as CSS variables at the top of `style.css`
+- **Fonts**: loaded from Google Fonts — swap out `Lora` and `DM Sans` for any pairing you prefer
+- **Team / posts / episodes**: edit the HTML directly — each card is clearly commented
+- **RSVP / Contact forms**: currently show a confirmation message on click. For real form submissions, connect to [Formspree](https://formspree.io) (free tier available) by replacing the button `onclick` with a proper `<form action="https://formspree.io/f/YOUR-ID" method="POST">`
 
-1. Create a GitHub repository and push all files.
-2. Go to **Settings → Pages**, set source to **GitHub Actions**.
-3. Create `.github/workflows/publish.yml`:
+## Adding a blog post
 
-```yaml
-name: Publish to GitHub Pages
-on:
-  push:
-    branches: [main]
-jobs:
-  build-deploy:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: quarto-dev/quarto-actions/setup@v2
-      - uses: quarto-dev/quarto-actions/publish@v2
-        with:
-          target: gh-pages
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-```
+Copy any `<article class="blog-card">` block in `blog.html` and fill in your own content. For a full Markdown-based blog with automatic listings, consider migrating to [Quarto](https://quarto.org) — the CSS design will carry over with minor tweaks.
 
-Your site will be live at `https://YOUR-USERNAME.github.io/REPO-NAME/`.
+## Migrating to Quarto
 
-## How `.qmd` files work
+This site was designed to be a starting point. When you're ready to scale up:
+- Install Quarto and run `quarto create project website`
+- Copy `style.css` into `assets/` and reference it from `_quarto.yml`
+- Convert each `.html` page to a `.qmd` file — content ports directly
+- Quarto handles blog listings, RSS feeds, and search automatically
 
-Each page is a Quarto Markdown file with a YAML frontmatter block (`---`) followed by content.
-Because all the page content is HTML (not Markdown prose), the files work identically to the original `.html` files — Quarto passes raw HTML through unchanged.
+---
 
-Key frontmatter options used here:
-- `page-layout: full` — removes Quarto's default centred column, allowing full-bleed sections
-- `toc: false` — hides the automatic table of contents
-- `include-in-header` — injects page-specific `<style>` blocks (used in `about.qmd`)
-
-## Adding JavaScript
-
-Inline `<script>` tags must be wrapped in a raw HTML block so Quarto doesn't escape them:
-
-````
-```{=html}
-<script>
-  // your JS here
-</script>
-```
-````
-
-This is already done for the filter, RSVP, and contact form scripts.
-
-## Connecting real forms
-
-The RSVP and contact forms currently show a confirmation on click.
-To wire them to a real backend, replace the `onclick` handler with [Formspree](https://formspree.io):
-
-```html
-<form action="https://formspree.io/f/YOUR-ID" method="POST">
-  ...
-  <button type="submit" class="btn btn-teal">Send →</button>
-</form>
-```
-
-## Migrating blog posts to native Quarto listings
-
-Right now, blog posts are hand-coded HTML cards in `blog.qmd`.
-To get automatic listings, RSS, and pagination, create individual post files:
-
-```
-posts/
-  2025-04-28-ants-engineers/index.qmd
-  2025-04-14-music-chills/index.qmd
-  ...
-```
-
-Then replace the hand-coded grid in `blog.qmd` with:
-
-```yaml
-listing:
-  contents: posts
-  type: grid
-  sort: "date desc"
-  categories: true
-```
-
-See https://quarto.org/docs/websites/website-listings.html for full docs.
+Built with plain HTML · Hosted free on GitHub Pages
